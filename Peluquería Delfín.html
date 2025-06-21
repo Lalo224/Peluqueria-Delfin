@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menú Principal – Peluquería Delfín</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #b3e5fc; /* fondo azul celeste */
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #ffffff;
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .logo img {
+      height: 80px;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 28px;
+      color: #333;
+    }
+
+    .boton {
+      padding: 18px 40px;
+      font-size: 18px;
+      font-weight: bold;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      color: white;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s, opacity 0.3s;
+      width: 80%;
+      max-width: 320px;
+    }
+
+    .boton:hover {
+      transform: translateY(-2px);
+      opacity: 0.9;
+    }
+
+    .galerias { background-color: #ffc107; } /* Aquí va enlazada la página de galerías */
+    .citas    { background-color: #28a745; } /* Aquí va enlazada la página de citas */
+    .opiniones { background-color: #17a2b8; } /* Enlace directo abajo */
+
+    .citas span {
+      display: block;
+      font-size: 12px;
+      font-weight: normal;
+      margin-top: 5px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      font-size: 13px;
+      color: #555;
+    }
+
+    footer a {
+      color: #555;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="LogoPeluquería.jpeg" alt="Logo Peluquería Delfín">
+    </div>
+  </header>
+
+  <main>
+    <h1>Bienvenido a Peluquería Delfín</h1>
+
+    <a href="GaleríasPF.html">
+      <button class="boton galerias">Date una idea</button>
+    </a>
+
+    <a href="PruebacitasII.html">
+      <button class="boton citas">
+        Agendar Cita
+        <span>(solo para personas mayores y/o discapacitados)</span>
+      </button>
+    </a>
+
+    <a href="https://v0-new-project-5ksja3yzujn-lalo-224s-projects.vercel.app" target="_blank">
+      <button class="boton opiniones">Deja tu Opinión</button>
+    </a>
+  </main>
+
+  <footer>
+    &copy; 2025 Peluquería Delfín. Todos los derechos reservados.<br>
+    <a href="Política de Privacidad – Peluquería Delfín.pdf" target="_blank">Política de Privacidad</a>
+  </footer>
+</body>
+</html>
